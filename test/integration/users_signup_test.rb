@@ -12,5 +12,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     assert_response :unprocessable_entity
     assert_template 'users/new'
+    #assert_select 'div#（エラー表示部分に含まれるCSSのid名を書いてください）'
+    #assert_select 'div.（エラー表示部分に含まれるCSSのclass名を書いてください）'
   end
 end
